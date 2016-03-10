@@ -5,6 +5,11 @@ def power(base,exponent):
     adder = 1
     final = base
     
+    
+    if exponent == 0:
+        print("The answer is 1")
+        exit()
+    
     while adder < exponent:
         final = final * base
         adder = adder + 1
@@ -17,9 +22,6 @@ base = int(raw_input("Give me a number:"))
 
 exponent = int(raw_input("Give me an exponent:"))
 
-if exponent == 0:
-    print("The answer is 1")
-    exit()
 
 answer = power(base,exponent)
 
