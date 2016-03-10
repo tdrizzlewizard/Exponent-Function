@@ -1,14 +1,13 @@
 def power(base,exponent):
     
-    """Determines final answer"""
+    """Excepts base and exponent and returns final answer"""
      
     adder = 1
     final = base
     
     
     if exponent == 0:
-        print("The answer is 1")
-        exit()
+        return 1
     
     while adder < exponent:
         final = final * base
